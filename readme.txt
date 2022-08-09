@@ -1,8 +1,5 @@
 motipi music streaming
----------------------------------------------------
-Admin Access
-email: admin@admin.com
-password: admin123
+
 ----------------------------------------------------
 Sample User Access
 email: molapo@example.com

@@ -30,15 +30,15 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-        <?php if($_SESSION['login_type'] == 1): ?>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.php?page=new_music" class=" ml-l nav-link nav-new_music tree-item">
+              <?php if($_SESSION['login_type'] == 1): ?>
+                <a href="./index.php?page=new_music" class=" ml-1 nav-link nav-new_music tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>   
+                  <p class="">Add New</p>
                 </a>
-              </li> 
-              <?php endif; ?>     
+              </li>
+              <?php endif; ?>
               <li class="nav-item">
                 <a href="./index.php?page=music_list" class=" ml-1 nav-link nav-music_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>

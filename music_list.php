@@ -17,9 +17,13 @@
               </div>
           </div>
 		</div>
-		<a class="btn btn-sm btn-primary bg-gradient-primary" href="index.php?page=new_music"><i class="fa fa-plus"></i> Add New</a>
+		<?php if($_SESSION['login_type'] == 1): ?>
+		<a class="btn btn-sm btn-primary bg-gradient-primary" href="index.php?page=new_music"><i class="fa fa-plus"></i>Add New</a>
+		<?php endif; ?>
 	</div>
+	<?php if($_SESSION['login_type'] == 1): ?>
 	<button class="btn btn-primary" id="play_all">Play All</button>
+	<?php endif; ?>
 	<div class="row" id="music-list">
 		<?php 
 			$musics= $conn->query("SELECT u.*,g.genre FROM uploads u inner join genres g on g.id = u.genre_id order by u.title asc");

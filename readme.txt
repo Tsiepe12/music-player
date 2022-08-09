@@ -5,8 +5,8 @@ email: admin@admin.com
 password: admin123
 ----------------------------------------------------
 Sample User Access
-email: jsmith@sample.com
-password: jsmith123
+email: molapo@example.com
+password: molapo123
 ----------------------------------------------------
 Project: Simple Music Cloud Community System using PHP/MySQLi
 

@@ -39,6 +39,4 @@ Open a web browser and browse the project. E.g [http://localhost/motipi music st
 
 I hope Motipi music streaming benefits all upcoming artists and producers by eliminating the middle-man
 
-Explore more on this website for more source codes and tutorials.
-
 Enjoy!

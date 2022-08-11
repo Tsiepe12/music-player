@@ -83,13 +83,14 @@
             }
                
           </style>
+          <!--Player bar with track title-->
       <div id="audio-player" class="d-flex w-100 justify-content-end align-items-center bg-dark py-1 position-absoulute">
         
             <button class="btn prev-player audio-control-btn" onclick="_prev($(this))" data-type="play"><i class="fa fa-step-backward"></i></button>
-            <button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="0" data-type="play" style="font-size: 25px"><i class="fa fa-play"></i></button>
+            <button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="https://www.w3schools.com/" data-type="" style="font-size: 25px"><i class="fa fa-play"></i></button>
             <button class="btn next-player audio-control-btn" onclick="_next(-1,1)" data-type="play"><i class="fa fa-step-forward"></i></button>
             <ss="bg-black" ended="nextAudioNode.play();" id="mplayer">
-              
+
             </audio>
         </div>
     </section>
@@ -117,6 +118,7 @@
           play_music(parsed,q,0)
         }
       })
+      //want to redirect here
       function _player(_this){
         var type = _this.attr('data-type')
         if($('#mplayer source').length <= 0)
@@ -131,13 +133,14 @@
           document.getElementById('mplayer').pause()
         }
       }
-      //player functionality
+      //player functionality...........................
       function play_music($src,$i=0,$p = 1){
       var audio = $('<audio controls class="bg-black" id="mplayer" data-queue = "'+$i+'"></audio>')
           if(typeof $src === 'object'){
              src_arr = $src;
            $src = $src[$i].upath
          }
+         //..............................................................
 
          document.cookie = "src="+JSON.stringify(src_arr)
          document.cookie = "pq="+$i

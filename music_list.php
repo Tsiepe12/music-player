@@ -35,7 +35,7 @@
 		?>
 		<div class="card bg-black music-item my-2 mx-1" data-id="<?php echo $row['id'] ?>" data-upath="<?php echo $row['upath'] ?>" style="width:15vw;cursor:pointer;">
 			<div class="card-img-top flex-w-100 position-relative py-2 px-3">
-				<?php if($_SESSION['login_type'] == 1 || $_SESSION['login_id'] == $row['user_id']): ?>
+				
                 	<div class="dropdown position-absolute" style="right:.5em;top:.5em">
 	                  <button type="button" class="btn btn-tool py-1" data-toggle="dropdown" title="Manage" style="background: #000000ab;z-index: 1">
 	                    <i class="fa fa-ellipsis-v"></i>
@@ -45,8 +45,8 @@
               			<a class="dropdown-item delete_music bg-dark" data-id="<?php echo $row['id'] ?>" href="javascript:void(0)">Delete</a>
 	                  </div>
 	                  </div>
-	              <?php endif; ?>
-				<span class="position-absolute" style="bottom:.5em;left:.5em;z-index: 2"><div class="btn bg-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="play_music({0:{id:'<?php echo $row['id'] ?>',upath:'assets/uploads/<?php echo $row['upath'] ?>'}})"><i class="fa fa-play"></i></div></span>
+					 <!--green round bitton-->
+				<span class="position-absolute" style="bottom:.5em;left:.5em;z-index: 2"><div class="btn bg-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="myFunction({0:{id:'<?php echo $row['id'] ?>',upath:'assets/uploads/<?php echo $row['upath'] ?>'}})"><i class="fa fa-play"></i></div></span>
 		<a href="index.php?page=view_music&id=<?php echo $row['id'] ?>">
 
 				<img src="assets/uploads/<?php echo $row['cover_image'] ?>" class="card-img-top"  style="object-fit: cover;max-width: 100%;height:26vh" alt="music Cover">

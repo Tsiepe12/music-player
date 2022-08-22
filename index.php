@@ -7,7 +7,7 @@
 
 
 	include 'header.php' 
-?>
+  ?>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
   <?php include 'topbar.php' ?>
@@ -85,12 +85,15 @@
           </style>
           <!--Player bar with track title-->
       <div id="audio-player" class="d-flex w-100 justify-content-end align-items-center bg-dark py-1 position-absoulute">
-        
+      <?php if($_SESSION['login_type'] == 1): ?>
             <button class="btn prev-player audio-control-btn" onclick="_prev($(this))" data-type="play"><i class="fa fa-step-backward"></i></button>
-            <button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="https://www.w3schools.com/" data-type="" style="font-size: 25px"><i class="fa fa-play"></i></button>
+            <?php endif; ?>
+           <!--<button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="0" data-type="play" style="font-size: 39px"><i class="fa fa-play"></i></button>-->
+            <button class="btn p-player audio-control-btn" onclick="myFunction()" data-type="play" style="font-size: 35px"><i class="fa fa-play"></i></button><!--test-->
+            <?php if($_SESSION['login_type']==1): ?>
             <button class="btn next-player audio-control-btn" onclick="_next(-1,1)" data-type="play"><i class="fa fa-step-forward"></i></button>
-            <ss="bg-black" ended="nextAudioNode.play();" id="mplayer">
-
+            <audio controls class="bg-black" ended="nextAudioNode.play();" id="mplayer">
+            <?php endif; ?>
             </audio>
         </div>
     </section>
@@ -118,7 +121,7 @@
           play_music(parsed,q,0)
         }
       })
-      //want to redirect here
+      //...
       function _player(_this){
         var type = _this.attr('data-type')
         if($('#mplayer source').length <= 0)
@@ -132,6 +135,15 @@
            _this.html('<i class="fa fa-play"></i>')
           document.getElementById('mplayer').pause()
         }
+      }
+      //test function
+      function myFunction() { location.replace("https://www.paypal.com/ls/home")
+        if ($('https://www.paypal.com/ls/home').replace)
+          return false;
+          this.attr('data-type','pause')
+          _this.html('<i class="fa fa-pause"></i>')
+          document.getElementById('mplayer').play()
+          
       }
       //player functionality...........................
       function play_music($src,$i=0,$p = 1){

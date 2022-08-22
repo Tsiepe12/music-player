@@ -14,7 +14,7 @@ foreach($qry as $k => $v){
 			<center>
 				<div class="d-flex img-thumbnail bg-gradient-1 position-relative" style="width: 12rem">
 					<img src="assets/uploads/<?php echo $cover_photo ?>" alt="" style="object-fit: cover;max-width: 100%;height:14rem">
-					<span class="position-absolute" style="bottom:.5em;left:.5em"><div class=" bg-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="play_playlist()"><i class="fa fa-play"></i></div></span>
+					<span class="position-absolute" style="bottom:.5em;left:.5em">-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="play_playlist()"><i class="fa fa-play"></i></div></span>
 				</div>
 			</center>
 			<div>
@@ -44,7 +44,8 @@ foreach($qry as $k => $v){
 				?>
 					<tr class="pitem" data-queue="<?php echo $i ?>" data-id="<?php echo $row['id'] ?>" data-upath="<?php echo $row['upath'] ?>">
 						<td>
-							<span class="btn bg-gradient-success rounded-circle d-flex justify-content-center align-items-center" style="width:30px;height:30px;z-index:2" onclick="play_playlist(<?php echo $i ?>)">
+							<!--green play button-->
+							<span class="btn bg-gradient-success rounded-circle d-flex justify-content-center align-items-center" style="width:30px;height:30px;z-index:2" onclick="myFunction(<?php echo $i ?>)">
 								<div class="fa fa-play text-white"></div>
 							</span>
 						</td>

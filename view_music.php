@@ -13,7 +13,7 @@ foreach($qry as $k => $v){
 			<center>
 				<div class="d-flex img-thumbnail bg-gradient-1 position-relative" style="width: 12rem">
 					<img src="assets/uploads/<?php echo $cover_image ?>" alt="" style="object-fit: cover;max-width: 100%;height:14rem">
-					<span class="position-absolute" style="bottom:.5em;left:.5em"><div class=" bg-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="play_music('assets/uploads/<?php echo $upath ?>')"><i class="fa fa-play"></i></div></span>
+					<span class="position-absolute" style="bottom:.5em;left:.5em"><div class="bg-green rounded-circle d-flex justify-content-center align-items-center" style="width: 2rem;height: 2rem;cursor: pointer;" onclick="myFunction('assets/uploads/<?php echo $upath ?>')"><i class="fa fa-play"></i></div></span>
 				</div>
 			</center>
 			<div>

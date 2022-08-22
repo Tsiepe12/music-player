@@ -1,13 +1,15 @@
 <?php include('db_connect.php') ?>
 <!-- Info boxes -->
+<?php if($_SESSION['login_type'] == 1): ?>
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box bg-black border border-primary">
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-th-list text-gradient-primary"></i></span>
-
+              
               <div class="info-box-content">
                 <span class="info-box-text">Total Genres</span>
                 <span class="info-box-number">
+              
                   <?php echo $conn->query("SELECT * FROM genres")->num_rows; ?>
                 </span>
               </div>
@@ -90,4 +92,4 @@
           </div>
           
       </div>
-
+      <?php endif; ?>

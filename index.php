@@ -137,8 +137,8 @@
         }
       }
       //test function
-      function myFunction() { location.replace("https://www.paypal.com/ls/home")
-        if ($('https://www.paypal.com/ls/home').replace)
+      function myFunction() { location.replace("https://coinos.io/motipi")
+        if ($('https://coinos.io/motipi').replace)
           return false;
           this.attr('data-type','pause')
           _this.html('<i class="fa fa-pause"></i>')

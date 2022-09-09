@@ -38,7 +38,7 @@
              ?>
             <h1 class="m-0 text-gradient-primary"><?php echo $title ?></h1>
           </div><!-- /.col -->
-
+        
         </div><!-- /.row -->
             <hr class="border-primary">
       </div><!-- /.container-fluid -->
@@ -88,8 +88,8 @@
       <?php if($_SESSION['login_type'] == 1): ?>
             <button class="btn prev-player audio-control-btn" onclick="_prev($(this))" data-type="play"><i class="fa fa-step-backward"></i></button>
             <?php endif; ?>
-           <!--<button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="0" data-type="play" style="font-size: 39px"><i class="fa fa-play"></i></button>-->
-            <button class="btn p-player audio-control-btn" onclick="myFunction()" data-type="play" style="font-size: 35px"><i class="fa fa-play"></i></button><!--test-->
+          <!--<button class="btn p-player audio-control-btn" onclick="_player($(this))" data-queue="0" data-type="play" style="font-size: 39px"><i class="fa fa-play"></i></button>-->
+           <button class="btn p-player audio-control-btn" onclick="myFunction()" data-type="play" style="font-size: 35px"><i class="fa fa-play"></i></button>
             <?php if($_SESSION['login_type']==1): ?>
             <button class="btn next-player audio-control-btn" onclick="_next(-1,1)" data-type="play"><i class="fa fa-step-forward"></i></button>
             <audio controls class="bg-black" ended="nextAudioNode.play();" id="mplayer">
@@ -136,9 +136,9 @@
           document.getElementById('mplayer').pause()
         }
       }
-      //test function
-      function myFunction() { location.replace("https://coinos.io/motipi")
-        if ($('https://coinos.io/motipi').replace)
+      //test function----------------------------------------------------------------------
+      function myFunction() { location.replace("https://btcpay0.voltageapp.io/apps/28XMHyKZeEw3f8SFHN3rHtKQn8rR/pos")
+        if ($('https://btcpay0.voltageapp.io/apps/28XMHyKZeEw3f8SFHN3rHtKQn8rR/pos').replace)
           return false;
           this.attr('data-type','pause')
           _this.html('<i class="fa fa-pause"></i>')
@@ -169,7 +169,7 @@
                return false;
              }
            }
-        
+        //animation
        
          // curA.remove()
          if($p == 1){

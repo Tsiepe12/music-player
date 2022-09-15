@@ -1,0 +1,50 @@
+Here brought forward is a Proposed Joint Venture Agreement between
+
+(1) Basotho Crypto (Motipi) Tsiepe Marago,
+tsiepemarago@gmail.com
+cell +26659706370,
+@tsiepe_m(twitter)
+https://github.com/Tsiepe12/music-player
+
+(2) Lnbits - lnbits@pm.me Ben Arc
+Lbits spotify jukebox
+
+(3) Pleb-FM - linkedin.com/in/alex-lewin1
+https://www.pleb.fm/
+
+(4) Elements - Nadav Ivgi
+shesek,
+@shesek (twitter)
+lightning-jukebox
+https://github.com/ElementsProject/lightning-jukebox
+
+Main Objective
+To re-establish a lightning Jukebox that will directly compensate an artist with SATS anytime a piece of music is played.
+
+Problem Statement
+Native music artists as creators of content in Lesotho and across the globe get nothing for their music that is subjected to copyright infringement, 
+they only rely on entrance fees to live shows or performances to make ends meet.
+
+Vision
+Global Mass Bitcoin Adaptation
+
+Modus Operandi
+The proposed lightning Jukebox will perform as follows, artist will have a privilege to upload music on Motipi Music Streaming data base in specific folder based on Genre , for example , under the artist folder ,
+albums will be categorized by release dates, 
+if it’s a new track it will fall under new releases, if it’s a hit song it will fall under the trending folder, 
+it is important to note that each artist will have to have an Lnbits wallet attached to the music folder for a direct payment to occur before the  track can be played,
+every time a fan selects a track he/she wishes to play, a lightning wallet QR code linked to the artist has to popup once the play button is clicked, when scanned and payment confirmed then the track should play, 
+when another fan wishes to play another artist song , the same process occurs but instead of the track automatically playing it will queue in the playlist for the playing song to end, 
+in order to make the Jukebox experience fun , 
+another cool feature used by Pleb-FM should be added , where fans can manipulate the playlist by bidding using SATS for which song to play first, 
+the highest bidder’s song will play next, huge rewards for the artist. The sky's the limit to how far intellectual property owners can benefit with this project, 
+a fan gets a multiple-choice whether to listen to a track or watch a  music Videos of their favorite  artist,
+reference Elements Lightning Jukebox , 
+that feature will demand extra SATS  for that extra effort. 
+We propose using our own database to manage local artists' music on our platform instead of the spotify API.
+
+Conclusion
+
+Motipi Music Streaming platform proudly brings together all the parties involved in the Lightning Jukebox for a nonprofit venture that will virtually meet the fan with an artist, 
+no middle-man, Lnbits Multiple wallets, Pleb-FM’s Bidding feature, and Elements Music Video approach.When the power of love overcomes love for power, 
+the world will be a better place, May God Bless.

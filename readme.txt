@@ -1,9 +1,6 @@
 motipi music streaming
 
-----------------------------------------------------
-Sample User Access
-email: molapo@example.com
-password: molapo123
+
 ----------------------------------------------------
 Project: Simple Music Cloud Community System using PHP/MySQLi
 
